@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land survey form</title>
+    <link rel="stylesheet" href="landsurvey.css">
+</head>
+<body>
+    <h1 id="title">Tesla Model Purchase</h1>
+    <p id="description"> Fill details below to complete your tesla order</p>
+
+    <form action="" id="survey-form">
+        <label for="name" id="name-label"> <b>Name</b></label>
+       <input id="name" type="text" name="name" placeholder="Full Name" required>
+        <br>
+        <label for="email" id="email-label"> <b> Email </b></label>
+        <input id="email" type="email" name="email" placeholder="email@gmail.com" required>
+        <br> 
+        <label for="Age" id="number-label"> <b>Age </b></label>
+        <input  id="number" type="number" name="number" placeholder="18" min="18" max="100" required>
+        <br>
+        <label for="dropdown" id="dropdown"> <b> Country</label>
+            <select name="" id="dropdown" required>
+                <option value="#">Select An Option</option>
+                <option value="America">America</option>
+                <option value="United kingdom">United kingdom</option>
+                <option value="China">China</option>
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Germany">Germany</option>
+            </select>
+        <br>
+        <br>
+        <label for="Modelcolor" id="name" > <b> ModelColor </b> </label>
+        <br>
+        <input type="radio" name="color" id="Black" value="black" required>
+        <label for="modelcolor">Black</label>
+        <br>
+        <input type="radio" name="color" id="white" value="white" required>
+        <label for="modelcolor">White</label>
+        <br>
+        <input type="radio" name="color" id="red" value="red" required>
+        <label for="modelcolor">Red</label>
+        <br>
+        <input type="radio" name="color" id="brown" value="brown" required>
+        <label for="modelcolor">Brown</label>
+        <br>
+        <input type="radio" name="color" id="yellow" value="yellow" required>
+        <label for="modelcolor">Yellow</label>
+        <br>
+        <br>
+
+        <label for="Model Number"> <b> Model Number </b></label>
+        <br>
+        <input   id="checkbox" type="checkbox" name="Model Number" value="model5" required>
+        <label for="Model Number">Model5</label> 
+        <br>
+        <input   id="checkbox"type="checkbox"  name="Model Number" value="model3" required>
+        <label for="Model Number">Model3</label>
+        <br>
+        <input  id="checkbox" type="checkbox" name="Model Number" value="modelx" required>
+        <label for="Model Number">Modelx</label>
+        <br>
+        <input  id="checkbox" type="checkbox"  name="Model Number" value="modely" required>
+        <label for="Model Number">Modely</label>
+        <br>
+        <br>
+        <label for="textarea"> <b>Additional Comments</b></label>
+        <textarea name="instruction" id="textarea" cols="50" rows="5" placeholder="If you have any problem than comment"></textarea>
+        <br>
+        <input id="submit" type="submit" value="Place Order">
+    </form>
+</body>
+</html>
