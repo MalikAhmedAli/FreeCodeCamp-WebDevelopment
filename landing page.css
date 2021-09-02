@@ -1,0 +1,146 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+header{
+    background-color: rgb(3, 2, 2);
+    display: block;
+   
+   
+}
+
+@media (max-width: 600px) {
+    header {
+      flex-wrap: wrap;
+    }
+  }
+  
+body{
+    background-color: #eee;
+  font-family: 'Lato', sans-serif;
+}
+
+#form{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100px;
+        margin-top: 30px;
+    
+}
+
+#email{
+    font-size: larger;
+    border-radius: 4px;
+}
+#submit{
+    color: rgb(230, 193, 26);
+    font-size: larger;
+}
+#submit:hover{
+    background-color: green;
+    cursor: pointer;
+    border-radius: 3px;
+}
+nav{
+    float: right;
+    padding: 0px 25px 5px;
+}
+.nav-link{
+    
+    font-size: larger;
+    color: rgb(65, 236, 22);
+    text-decoration: double underline rgb(241, 226, 11);
+}
+
+
+h2{
+    text-align: center;
+    padding: 30px 0px 20px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#About p{
+ 
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+iframe{
+   display: block;
+    margin:0 auto;
+}
+@media(max-width: 500px){
+    body{
+        flex-wrap: wrap;
+    }
+}
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
+  
+  .product > .level {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .product > h2 {
+    margin-top: 15px;
+  }
+  
+  .product > ol {
+    margin: 15px 0;
+  }
+  
+  .product > ol > li {
+    padding: 5px 0;
+  }
+  
+  .product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+  }
+  
+  .product > button:hover {
+    background-color: orange;
+    transition: background-color 1s;
+  }
+  
+  @media (max-width: 800px) {
+    #pricing {
+      flex-direction: column;
+    }
+    .product {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
